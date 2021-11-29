@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/solsea-test/static/css/main.788e6079.chunk.css",
+    "main.js": "/solsea-test/static/js/main.0ec06ee7.chunk.js",
+    "main.js.map": "/solsea-test/static/js/main.0ec06ee7.chunk.js.map",
+    "runtime-main.js": "/solsea-test/static/js/runtime-main.cff7a9aa.js",
+    "runtime-main.js.map": "/solsea-test/static/js/runtime-main.cff7a9aa.js.map",
+    "static/js/2.acdcfb90.chunk.js": "/solsea-test/static/js/2.acdcfb90.chunk.js",
+    "static/js/2.acdcfb90.chunk.js.map": "/solsea-test/static/js/2.acdcfb90.chunk.js.map",
+    "index.html": "/solsea-test/index.html",
+    "static/css/main.788e6079.chunk.css.map": "/solsea-test/static/css/main.788e6079.chunk.css.map",
+    "static/js/2.acdcfb90.chunk.js.LICENSE.txt": "/solsea-test/static/js/2.acdcfb90.chunk.js.LICENSE.txt",
+    "static/media/ph.74b465e9.jpg": "/solsea-test/static/media/ph.74b465e9.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.cff7a9aa.js",
+    "static/js/2.acdcfb90.chunk.js",
+    "static/css/main.788e6079.chunk.css",
+    "static/js/main.0ec06ee7.chunk.js"
+  ]
+}
