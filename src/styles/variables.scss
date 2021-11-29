@@ -1,0 +1,46 @@
+// FONT
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;800&display=swap");
+$Nunito: "Nunito Sans", sans-serif;
+
+// COLORS
+// accent
+$accentColorHeart: rgb(255, 20, 183);
+$accentColorSearch: rgb(70, 255, 215);
+$accentColorUnverified: rgb(252, 225, 0);
+
+// primary
+$prmaryColor50: rgb(20, 168, 255);
+$prmaryColor100: rgb(24, 179, 204);
+$prmaryColor200: rgb(13, 110, 253);
+$prmaryColor300: rgb(10, 88, 202);
+$prmaryColor400: rgb(78, 20, 255);
+$prmaryColor500: rgb(38, 24, 79);
+$prmaryColor600: rgb(37, 21, 82);
+
+// neutral
+$neutralColor100: rgb(255, 255, 255);
+$neutralColor200: rgb(244, 247, 252);
+$neutralColor250: rgb(250, 235, 215);
+$neutralColor300: rgb(211, 211, 211);
+$neutralColor400: rgb(128, 128, 128);
+$neutralColor900: rgb(8, 9, 9);
+
+// OTHER VARIABLES
+// header height
+$headerHeight: 90px;
+
+// border
+$borderCard: 2px solid $neutralColor300;
+
+// border radius
+$cardBorderRadius: 10px;
+
+// card shadow
+$cardShadow: rgba(204, 218, 246, 0.3) 0px 2px 4px 0px, rgba(204, 218, 246, 0.8) 0px 2px 16px 0px;
+
+// screen sizes
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;

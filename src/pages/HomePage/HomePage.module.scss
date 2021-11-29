@@ -1,0 +1,14 @@
+@import "../../styles/variables.scss";
+
+.title {
+  padding-block: 100px;
+  font-size: 80px;
+  font-weight: 800;
+  background: #45a0e6;
+  background: linear-gradient(to right, #45a0e6 26%, #8357d0 96%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @media screen  and (max-width: $sm) {
+    font-size: 60px;
+  }
+}

@@ -1,0 +1,141 @@
+@import "../../../styles/variables.scss";
+
+.wrapper {
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 10px 20px;
+  border: 2px solid $neutralColor100;
+  border-radius: 10px;
+  background-color: $neutralColor100;
+  box-shadow: $cardShadow;
+  width: 100%;
+}
+
+// if nft is verified it has blue border
+.verified {
+  border: 2px solid $prmaryColor50;
+}
+
+.title {
+  color: $prmaryColor600;
+  padding: 10px 0;
+}
+
+// image
+.imgWrapper {
+  border-top: $borderCard;
+  border-bottom: $borderCard;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .nftImg {
+    width: 100%;
+    object-fit: contain;
+    align-self: center;
+    padding: 20px 0;
+  
+    transition: transform 0.7s; // animation
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// price
+.price {
+  border-bottom: $borderCard;
+  padding: 10px 0;
+  color: $prmaryColor100;
+  font-size: 24px;
+  font-weight: 700;
+  span {
+    font-size: 18px;
+  }
+}
+
+// icons section
+.row {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  
+  img {
+    width: 20px;
+  }
+}
+
+.row > div {
+  display: flex;
+}
+
+.row > div > p,
+.row > div > div {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.row > div > p {
+  margin-left: 5px;
+}
+
+.eye {
+  color: $neutralColor400;
+}
+
+.heart {
+  color: $accentColorHeart;
+}
+
+.eye,
+.heart {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+// media queries
+@media screen and (min-width: $sm) {
+  .wrapper {
+    width: 540px;
+  }
+ .nftImg {
+  height: 50vw;
+ }
+
+}
+
+@media screen and (min-width: $md) {
+  .wrapper {
+    width: 384px;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .wrapper {
+    width: 330.66px;
+  }
+
+  .nftImg {
+    height: 30vw;
+   }
+}
+
+@media screen and (min-width: $xl) {
+  .wrapper {
+    width: 300px;
+  }
+  .nftImg {
+    height: 15vw;
+   }
+
+}

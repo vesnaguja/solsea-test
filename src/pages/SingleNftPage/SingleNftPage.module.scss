@@ -1,0 +1,219 @@
+@import "../../styles/variables.scss";
+
+.containerFluid {
+  background-color: $neutralColor200;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+
+  // narrow
+  width: 1200px;
+}
+@media (min-width: 50em) {
+  .split {
+    flex-direction: row;
+  }
+  .split > * {
+    flex-basis: 100%;
+  }
+}
+
+// all section HTML tags
+section {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem 1.5rem;
+  background-color: $neutralColor100;
+  border-radius: $cardBorderRadius;
+  box-shadow: $cardShadow;
+  color: $prmaryColor600;
+}
+
+// section 1
+.section1 {
+  width: 90%;
+  margin-inline: auto;
+  border-radius: $cardBorderRadius;
+  padding-top: 2rem;
+  img {
+    width: 100%;
+    border-radius: $cardBorderRadius;
+  }
+}
+
+// section 2
+.section2 {
+  margin-bottom: 0;
+  p {
+    border-top: $borderCard;
+    color: $prmaryColor600;
+    padding-top: 20px;
+  }
+}
+
+// section 3
+.section3 {
+  .icons {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 600;
+  }
+  .eye {
+    color: $prmaryColor600;
+  }
+  .heart {
+    color: $accentColorHeart;
+  }
+  .eye,
+  .heart {
+    background-color: $neutralColor200;
+    border-radius: 50px;
+    padding: 5px 20px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 5rem;
+    p {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  // creator
+  .creatorText {
+    padding: 20px;
+  }
+
+  // title
+  h2 {
+    font-size: 40px;
+    font-weight: 800;
+    border-bottom: $borderCard;
+    padding: 20px 0;
+  }
+
+  // licence and minted
+  .license,
+  .minted {
+    font-size: 20px;
+    padding: 10px 0;
+    display: flex;
+
+    p,
+    div {
+      display: flex;
+      align-items: center;
+      padding-right: 5px;
+    }
+
+    img {
+      width: 20px;
+    }
+  }
+
+  .licenseLabel {
+    font-weight: 700;
+    padding-right: 5px;
+  }
+
+  // tags
+  .tagsWrapper {
+    border-top: $borderCard;
+    padding-block: 5px;
+    .tag {
+      background-color: $neutralColor250;
+      margin: 5px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      display: inline-block;
+    }
+  }
+
+  // collection
+  .collection {
+    border-block: 2px solid $neutralColor300;
+    padding-block: 10px;
+  }
+  // unverified
+  .unverified {
+    background-color: $accentColorUnverified;
+    padding: 10px;
+    margin-block: 10px;
+    border-radius: 20px;
+    text-align: center;
+    align-self: center;
+    display: flex;
+    p:first-child {
+      margin-top: 3px;
+    }
+  }
+}
+
+// section 4
+.section4 {
+  .listed {
+    padding-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .sellerKey {
+    font-weight: 400;
+    color: $prmaryColor200;
+    width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sellerKey:hover {
+    color: $prmaryColor300;
+    cursor: pointer;
+  }
+
+  .price {
+    border-block: $borderCard;
+    padding-block: 20px;
+    color: $prmaryColor100;
+    font-size: 40px;
+    font-weight: 800;
+    span {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: $prmaryColor400;
+    border-color: $prmaryColor400;
+    border-radius: $cardBorderRadius;
+    margin-block: 20px;
+    color: $neutralColor100;
+    font-weight: 800;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .link {
+    color: $prmaryColor200;
+  }
+  .link:hover {
+    color: $prmaryColor300;
+    cursor: pointer;
+  }
+}
+
+// section 5
+.section5 {
+  p {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+}

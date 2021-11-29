@@ -1,0 +1,55 @@
+@import "../../../styles/variables.scss";
+
+.containerFluid {
+  background-color: $neutralColor200;
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  box-shadow: 1px 20px 13px -9px rgba(202, 216, 246, 1) inset;
+
+  .container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: $sm) {
+  .container {
+    max-width: $sm;
+  }
+}
+
+@media only screen and (min-width: $sm) {
+  .container {
+    max-width: $md;
+  }
+}
+
+@media only screen and (min-width: $md) {
+  .container {
+    max-width: $lg;
+  }
+}
+
+@media only screen and (min-width: $lg) {
+  .container {
+    max-width: $xl;
+  }
+}
+
+@media only screen and (min-width: $xl) {
+  .container {
+    max-width: $xxl;
+  }
+}
+
+@media only screen and (min-width: $xxl) {
+  .container {
+    max-width: $xxl;
+  }
+}
