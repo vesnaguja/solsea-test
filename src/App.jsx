@@ -7,6 +7,7 @@ import useDebounce from "./hooks/useDebounce";
 import HomePage from "./pages/HomePage/HomePage";
 import SingleNftPage from "./pages/SingleNftPage/SingleNftPage";
 import PageNotFound from "./pages/PageNotFound/PageNotFound";
+import Page from "./components/Page/Page";
 
 const App = () => {
   const [pageNumber, setPageNumber] = useState(0);
@@ -22,24 +23,26 @@ const App = () => {
 
   return (
     <div className="App">
-      <Routes>
-        <Route
-          path="/solsea-test/"
-          exact
-          element={
-            <HomePage
-              loading={loading}
-              nftList={nftList}
-              hasMore={hasMore}
-              searchString={searchString}
-              searchHandler={searchHandler}
-              setPageNumber={setPageNumber}
-            />
-          }
-        />
-        <Route path="/solsea-test/nft/:Mint" element={<SingleNftPage />} />
-        <Route path="*" element={<PageNotFound />} />
-      </Routes>
+      <Page>
+        <Routes>
+          <Route
+            path="/solsea-test/"
+            exact
+            element={
+              <HomePage
+                loading={loading}
+                nftList={nftList}
+                hasMore={hasMore}
+                searchString={searchString}
+                searchHandler={searchHandler}
+                setPageNumber={setPageNumber}
+              />
+            }
+          />
+          <Route path="/solsea-test/nft/:Mint" element={<SingleNftPage />} />
+          <Route path="*" element={<PageNotFound />} />
+        </Routes>
+      </Page>
     </div>
   );
 };

@@ -1,5 +1,5 @@
 // react
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 // react router
 import { useParams } from "react-router";
 // react router dom
@@ -14,7 +14,6 @@ import { getSingleNFT } from "../../services/singleNftService";
 import { shortCreatorAddress, getCreatorAddress } from "../../shared/helper";
 import { getPrice } from "../../shared/helper";
 // components
-import Page from "../../components/Page/Page";
 import Loader from "../../components/Loader/Loader";
 // images
 import logo from "../../assets/images/logo.png";
@@ -49,7 +48,7 @@ const SingleNftPage = () => {
   const nftPrice = getPrice(singleNft.price);
 
   return (
-    <Page>
+    <Fragment>
       {loading ? (
         <Loader />
       ) : (
@@ -169,7 +168,7 @@ const SingleNftPage = () => {
           </div>
         </div>
       )}
-    </Page>
+    </Fragment>
   );
 };
 
