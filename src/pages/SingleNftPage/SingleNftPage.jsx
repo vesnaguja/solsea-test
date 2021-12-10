@@ -117,7 +117,7 @@ const SingleNftPage = () => {
                 </div>
 
                 {/* tags */}
-                <div className={classes.tagsWrapper}>
+                <div className={singleNft.tags === undefined ? classes.tagsWrapper : classes.tagsWrapper + " " + classes.border }>
                   {singleNft.tags === undefined
                     ? ""
                     : singleNft.tags.map((tag, index) => (
@@ -126,8 +126,8 @@ const SingleNftPage = () => {
                         </p>
                       ))}
                 </div>
-                {/* collection */}
 
+                {/* collection */}
                 <h3 className={classes.collection}>
                   {singleNft.nft_collection === undefined || singleNft.nft_collection.title === undefined
                     ? "Not Part of a Collection"

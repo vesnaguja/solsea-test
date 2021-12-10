@@ -123,8 +123,7 @@ section {
 
   // tags
   .tagsWrapper {
-    border-top: $borderCard;
-    padding-block: 5px;
+    padding-block: 5px;   
     .tag {
       background-color: $neutralColor250;
       margin: 5px;
@@ -133,10 +132,14 @@ section {
       display: inline-block;
     }
   }
+  // if tags exists, wrapper has border-bottom ???
+  .border {
+    border-block: $borderCard;
+  }
 
   // collection
   .collection {
-    border-block: 2px solid $neutralColor300;
+    border-bottom: $borderCard;
     padding-block: 10px;
   }
   // unverified
@@ -145,11 +148,15 @@ section {
     padding: 10px;
     margin-block: 10px;
     border-radius: 20px;
-    text-align: center;
+    justify-content: center;
     align-self: center;
     display: flex;
+
+    p {
+      font-size: 16px;
+    }
     p:first-child {
-      margin-top: 3px;
+      margin: 3px 5px 0 0;
     }
   }
 }

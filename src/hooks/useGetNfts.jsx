@@ -19,7 +19,6 @@ const useGetNfts = (pageNumber, searchString) => {
         }
       });
 
-      //console.log(newList);
       return newList;
     });
 
